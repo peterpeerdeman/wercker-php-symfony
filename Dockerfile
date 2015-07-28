@@ -6,4 +6,6 @@ RUN apt-get update && apt-get install -y \
         zlib1g-dev \
     && docker-php-ext-install zip
 
+COPY php.ini.dist /usr/local/etc/php/php.ini
+
 CMD ["php"]
