@@ -5,9 +5,10 @@ RUN apt-get update && apt-get install -y \
         git \
         zlib1g-dev \
     && docker-php-ext-install \
-	zip \
 	mbstring \
-	pdo_mysql
+	opcache \
+	pdo_mysql \
+	zip
 
 COPY php.ini.dist /usr/local/etc/php/php.ini
 
