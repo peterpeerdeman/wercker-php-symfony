@@ -1,5 +1,12 @@
-# wercker-php-symfony
-Dockerfile for PHP/Symfony development using the Wercker EWOK stack.
+# wercker-php-symfony2-npm
+Dockerfile for PHP/Symfony2 development using the Wercker EWOK stack.
 
-Still very basic and inflexible, tailored to my personal needs.
-Uses "Europe/Amsterdam" as timezone in php.ini.
+Contains
+- PHP5.6
+- all extensions required to run symfony2
+- configured php.ini with locale
+- phpunit
+- nodejs
+
+## Credits
+Based on the wercker-php-symfony box by @reinoudk https://github.com/reinoudk/wercker-php-symfony
