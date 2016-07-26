@@ -27,6 +27,13 @@ RUN apt-get -y install python-software-properties git build-essential
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get install -y nodejs
 
+RUN gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+RUN curl -L https://get.rvm.io | bash -s stable
+ENV PATH /usr/local/rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+RUN rvm requirements
+RUN rvm install 2.0
+RUN gem install bundler --no-ri --no-rdoc
+
 WORKDIR /app
 
 CMD ["php"]

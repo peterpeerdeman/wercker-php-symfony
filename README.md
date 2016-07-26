@@ -7,6 +7,7 @@ Contains
 - configured php.ini with locale
 - phpunit
 - nodejs
+- ruby / bundler for capifony deployments
 
 ## Credits
 Based on the wercker-php-symfony box by @reinoudk https://github.com/reinoudk/wercker-php-symfony
